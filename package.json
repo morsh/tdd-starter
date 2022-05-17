@@ -1,0 +1,27 @@
+{
+  "name": "tdd-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "tslint --project ./tsconfig.json",
+    "watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
+    "msft-jest-config": "^1.0.1",
+    "msft-tslint-config": "^1.0.0",
+    "ts-jest": "^28.0.2",
+    "tslint": "^6.1.3",
+    "typescript": "^4.6.4"
+  },
+  "jest": {
+    "preset": "msft-jest-config"
+  }
+}
