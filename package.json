@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "lint": "tslint --project ./tsconfig.json",
+    "lint": "eslint -c .eslintrc.js .",
     "watch": "jest --watch"
   },
   "keywords": [],
@@ -14,11 +14,14 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
+    "eslint-plugin-jsdoc": "^39.3.2",
     "jest": "^28.1.0",
     "msft-jest-config": "^1.0.1",
-    "msft-tslint-config": "^1.0.0",
     "ts-jest": "^28.0.2",
-    "tslint": "^6.1.3",
     "typescript": "^4.6.4"
   },
   "jest": {
