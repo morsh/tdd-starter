@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint -c .eslintrc.js .",
     "watch": "jest --watch"
   },
@@ -25,6 +25,18 @@
     "typescript": "^4.6.4"
   },
   "jest": {
-    "preset": "msft-jest-config"
+    "preset": "msft-jest-config",
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "coveragePathIgnorePatterns": [],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
   }
 }
